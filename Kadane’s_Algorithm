@@ -1,0 +1,20 @@
+Q4.Kadane’s Algorithm – Max Subarray Sum
+Ans:
+#include <iostream>
+using namespace std;
+
+int kadane(int arr[], int n) {
+    int maxSum = arr[0], currSum = arr[0];
+    for (int i = 1; i < n; i++) {
+        currSum = max(arr[i], currSum + arr[i]);
+        maxSum = max(maxSum, currSum);
+    }
+    return maxSum;
+}
+
+int main() {
+    int arr[] = {-2, -3, 4, -1, -2, 1, 5, -3};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    cout << "Max subarray sum: " << kadane(arr, n);
+    return 0;
+}
