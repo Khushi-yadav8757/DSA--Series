@@ -1,4 +1,5 @@
 Q3.Find the missing number in 1 to n
+
 Ans:-
 #include <iostream>
 using namespace std;
