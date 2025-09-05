@@ -1,4 +1,5 @@
 Q2.Reverse an array in-place
+
 Ans:-
 #include <iostream>
 using namespace std;
